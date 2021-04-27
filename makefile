@@ -6,8 +6,8 @@ build:
 	cd /Windows-Deployer-KVM-Web && \
 	npm install && \
 	npm run build && \
-	mv /Windows-Deployer-KVM-Web/build /app/static
-	go get -u github.com/gobuffalo/packr/packr
+	mv /Windows-Deployer-KVM-Web/build /app/static && \
+	go get -u github.com/gobuffalo/packr/packr && \
 	cd /app && \
 	go mod download && \
 	packr && \
