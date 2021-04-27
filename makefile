@@ -1,7 +1,7 @@
 build:
 	apt update
 	apt upgrade -y
-	apt install -y --no-install-recommends git nodejs npm golang
+	DEBIAN_FRONTEND="noninteractive" apt install -y --no-install-recommends git nodejs npm golang
 	cd /app
 	go mod download
 	git clone https://github.com/yoanndelattre/Windows-Deployer-KVM-Web.git /app/Windows-Deployer-KVM-Web
