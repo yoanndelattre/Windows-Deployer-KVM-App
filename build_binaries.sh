@@ -11,8 +11,8 @@ go get -u github.com/gobuffalo/packr/packr && \
 cd /app && \
 go mod download && \
 packr && \
-GOOS=windows GOARCH=amd64 go build -o output/Windows-Deployer-Windows-x86_64.exe /app/main.go && \
-GOOS=darwin GOARCH=amd64 go build -o output/Windows-Deployer-Darwin-x86_64 /app/main.go &&\
-GOOS=darwin GOARCH=arm64 go build -o output/Windows-Deployer-Darwin-arm64 /app/main.go && \
-GOOS=linux GOARCH=amd64 go build -o output/Windows-Deployer-Linux-x86_64 /app/main.go && \
-GOOS=linux GOARCH=arm64 go build -o output/Windows-Deployer-Linux-arm64 /app/main.go
+GOOS=windows GOARCH=amd64 go build -o output/Windows-Deployer-Windows-x86_64.exe && \
+GOOS=darwin GOARCH=amd64 go build -o output/Windows-Deployer-Darwin-x86_64 &&\
+GOOS=darwin GOARCH=arm64 go build -o output/Windows-Deployer-Darwin-arm64 && \
+GOOS=linux GOARCH=amd64 go build -o output/Windows-Deployer-Linux-x86_64 && \
+GOOS=linux GOARCH=arm64 go build -o output/Windows-Deployer-Linux-arm64
