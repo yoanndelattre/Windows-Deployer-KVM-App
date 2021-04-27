@@ -8,7 +8,9 @@ build:
 	npm run build && \
 	mv /Windows-Deployer-KVM-Web/build /app/static
 	go get -u github.com/gobuffalo/packr/packr
-	cd /app && go mod download && packr && \
+	cd /app && \
+	go mod download && \
+	packr && \
 	GOOS=windows GOARCH=amd64 go build -o output/Windows-Deployer-Windows-x86_64.exe /app/main.go && \
 	GOOS=darwin GOARCH=amd64 go build -o output/Windows-Deployer-Darwin-x86_64 /app/main.go &&\
 	GOOS=darwin GOARCH=arm64 go build -o output/Windows-Deployer-Darwin-arm64 /app/main.go && \
