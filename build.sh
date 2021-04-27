@@ -1,4 +1,4 @@
 #!/bin/bash
 docker pull golang:latest
-docker run -it --rm -v "$PWD:/app" golang:latest sh -c "apt update && apt install -y make && make -f /app/Makefile build"
+docker run -it --rm -v "$PWD:/app" golang:latest bash /app/build_binaries.sh
 docker rmi golang:latest
