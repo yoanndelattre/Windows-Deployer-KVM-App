@@ -32,7 +32,7 @@ jobs:
       run: go get -u github.com/gobuffalo/packr/packr
 
     - name: Run packr
-      run: cd /home/runner/work/Windows-Deployer-KVM-App/Windows-Deployer-KVM-App && packr
+      run: cd /home/runner/work/Windows-Deployer-KVM-App/Windows-Deployer-KVM-App && export GOPATH=$HOME/go && export PATH=$PATH:$GOROOT/bin:$GOPATH/bin && packr
 
     - name: Build app windows amd64
       run: GOOS=windows GOARCH=amd64 go build -o output/Windows-Deployer-Windows-x86_64.exe
