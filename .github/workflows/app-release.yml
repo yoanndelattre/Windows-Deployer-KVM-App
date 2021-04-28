@@ -45,3 +45,17 @@ jobs:
 
     - name: Build app linux arm64
       run: GOOS=linux GOARCH=arm64 go build -o output/Windows-Deployer-Linux-arm64
+
+    - name: Publish release
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        draft: false
+        prerelease: false
+        title: "Windows-Deployer App"
+        files: |
+          output/Windows-Deployer-Windows-x86_64.exe
+          output/Windows-Deployer-Darwin-x86_64
+          output/Windows-Deployer-Linux-x86_64
+          output/Windows-Deployer-Linux-arm64
