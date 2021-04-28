@@ -15,9 +15,36 @@ jobs:
 
     - name: Set up Go
       uses: actions/setup-go@master
-    
+
     - name: Set up Nodejs
       uses: actions/setup-node@master
-    
-    - name: pwd
-      run: pwd && ls
+
+    - name: Clone website
+      run: git clone https://github.com/yoanndelattre/Windows-Deployer-KVM-Web.git /home/runner/work/Windows-Deployer-KVM-Web
+
+    - name: Build website
+      run: cd /home/runner/work/Windows-Deployer-KVM-Web && npm install && npm run build
+
+    - name: Move website to app
+      run: mv /home/runner/work/Windows-Deployer-KVM-Web/build /home/runner/work/Windows-Deployer-KVM-App/Windows-Deployer-KVM-App/static
+
+    - name: Get packr
+      run: go get -u github.com/gobuffalo/packr/packr
+
+    - name: Run packr
+      run: cd /home/runner/work/Windows-Deployer-KVM-App/Windows-Deployer-KVM-App && packr
+
+    - name: Build app windows amd64
+      run: GOOS=windows GOARCH=amd64 go build -o output/Windows-Deployer-Windows-x86_64.exe
+
+    - name: Build app darwin amd64
+      run: GOOS=darwin GOARCH=amd64 go build -o output/Windows-Deployer-Darwin-x86_64
+
+    - name: Build app darwin arm64
+      run: GOOS=darwin GOARCH=arm64 go build -o output/Windows-Deployer-Darwin-arm64
+
+    - name: Build app linux amd64
+      run: GOOS=linux GOARCH=amd64 go build -o output/Windows-Deployer-Linux-x86_64
+
+    - name: Build app linux arm64
+      run: GOOS=linux GOARCH=arm64 go build -o output/Windows-Deployer-Linux-arm64
