@@ -46,6 +46,9 @@ jobs:
     - name: Build app linux arm64
       run: GOOS=linux GOARCH=arm64 go build -o output/Windows-Deployer-Linux-arm64
 
+    - name: Build app linux arm
+      run: GOOS=linux GOARCH=arm go build -o output/Windows-Deployer-Linux-arm
+
     - name: Publish release
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
@@ -59,3 +62,4 @@ jobs:
           output/Windows-Deployer-Darwin-x86_64
           output/Windows-Deployer-Linux-x86_64
           output/Windows-Deployer-Linux-arm64
+          output/Windows-Deployer-Linux-arm
