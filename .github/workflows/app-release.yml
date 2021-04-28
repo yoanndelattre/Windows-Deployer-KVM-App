@@ -1,0 +1,23 @@
+name: "App-Release"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up code
+      uses: actions/checkout@master
+
+    - name: Set up Go
+      uses: actions/setup-go@master
+    
+    - name: Set up Nodejs
+      uses: actions/setup-node@master
+    
+    - name: pwd
+      run: pwd && ls
