@@ -40,9 +40,6 @@ jobs:
     - name: Build app darwin amd64
       run: GOOS=darwin GOARCH=amd64 go build -o output/Windows-Deployer-Darwin-x86_64
 
-    - name: Build app darwin arm64
-      run: GOOS=darwin GOARCH=arm64 go build -o output/Windows-Deployer-Darwin-arm64
-
     - name: Build app linux amd64
       run: GOOS=linux GOARCH=amd64 go build -o output/Windows-Deployer-Linux-x86_64
 
