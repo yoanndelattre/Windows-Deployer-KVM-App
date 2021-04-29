@@ -39,6 +39,13 @@ Installation methods:
 &nbsp;  
 &nbsp;
 
+## Requirements
+
+- [Spice](https://www.spice-space.org/download.html)
+
+&nbsp;  
+&nbsp;
+
 ## Usage
 
 ![screenshot-webview](https://github.com/yoanndelattre/Windows-Deployer-KVM-App/raw/master/screenshots/screenshot-webview.png)
@@ -53,8 +60,24 @@ For example : (`./Windows-Deployer-Linux-x86_64`)
 
 &nbsp;
 
+### *Important: The project must be used only for the application. There should be no other instances or other storage volumes.*
+
+&nbsp;
+
 ### Register keys
 
 To use the application you must register the Access key, the Secret key and the project ID.
 
-*Important: the project must be used only for the application. There should be no other instances or other storage volumes*
+&nbsp;
+
+### Host Server Administration
+
+The initialization create an instance of type GP1-S with 8 cores CPU, 32 GB of ram and a storage volume of 300 Go.
+
+When the instance is ready the initialization [script](https://github.com/yoanndelattre/Windows-Deployer-KVM-Scripts/blob/master/scripts-install/initial_setup.sh) is launched via Cloud-Init. The installlation takes an average of 4 minutes.
+
+&nbsp;
+
+### Windows 10 VM Administration
+
+The Spice connection command start streaming with the [Spice software](https://www.spice-space.org/download.html).
