@@ -62,7 +62,7 @@ For example : `./Windows-Deployer-Linux-x86_64`
 
 &nbsp;
 
-### *Important: The project must be used only for the application. There should be no other instances or other storage volumes.*
+### *Important: The Scaleway project must be used only for the application. There should be no other instances or other storage volumes.*
 
 &nbsp;
 
