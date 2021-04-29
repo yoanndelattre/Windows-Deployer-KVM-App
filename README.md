@@ -1,5 +1,4 @@
 # Windows-Deployer-KVM-App
-&nbsp;
 
 ## Continuous Integration Status Badge with GitHub Actions on ```master``` branch :
 
