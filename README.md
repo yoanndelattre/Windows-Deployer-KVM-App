@@ -56,7 +56,7 @@ Installation methods:
 
 The application is a binary. It launches by executing it in a terminal.
 
-For example : (`./Windows-Deployer-Linux-x86_64`)
+For example : `./Windows-Deployer-Linux-x86_64`
 
 &nbsp;
 
