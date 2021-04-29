@@ -50,3 +50,11 @@ Installation methods:
 The application is a binary. It launches by executing it in a terminal.
 
 For example : (`./Windows-Deployer-Linux-x86_64`)
+
+&nbsp;
+
+### Register keys
+
+To use the application you must register the Access key, the Secret key and the project ID.
+
+*Important: the project must be used only for the application. There should be no other instances or other storage volumes*
