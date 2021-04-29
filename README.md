@@ -16,8 +16,6 @@
 
 ### The application is divided into four parts:
 
-&nbsp;
-
 * [Windows-Deployer-KVM-Scripts](https://github.com/yoanndelattre/Windows-Deployer-KVM-Scripts) | This repository contains the scripts for initializing, installing KVM, various applications and creating the Windows VM with the template file.
 
 * [Virsh-Api-Server](https://github.com/yoanndelattre/Virsh-Api-Server) | The Virsh-Api-Server application open an endpoint in http to manage the Windows VM with the virsh binary. This app can start, shutdown, restart and get VM status. This application is written with the Golang language.
