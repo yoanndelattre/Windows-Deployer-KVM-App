@@ -2,7 +2,7 @@
 
 &nbsp;
 
-## Continuous Integration Status Badge with GitHub Actions on ```master``` branch :
+## Status Badge GitHub Actions on ```master``` branch :
 
 [![App-Release](https://github.com/yoanndelattre/Windows-Deployer-KVM-App/actions/workflows/app-release.yml/badge.svg?branch=master)](https://github.com/yoanndelattre/Windows-Deployer-KVM-App/actions/workflows/app-release.yml)
 
