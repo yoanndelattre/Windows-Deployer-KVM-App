@@ -5,11 +5,7 @@
 
 [![App-Release](https://github.com/yoanndelattre/Windows-Deployer-KVM-App/actions/workflows/app-release.yml/badge.svg?branch=master)](https://github.com/yoanndelattre/Windows-Deployer-KVM-App/actions/workflows/app-release.yml)
 
-&nbsp;
-
 The Windows-Deployer application allows you to create and manage a Windows 10 virtual machine with KVM on a Scaleway instance under Ubuntu.
-
-&nbsp;
 
 ### The application is divided into four parts:
 
