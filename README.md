@@ -8,7 +8,7 @@
 &nbsp;  
 &nbsp;
 
-### The Windows-Deployer application allows you to create and manage a Windows 10 virtual machine with KVM on a Scaleway instance under Ubuntu.
+The Windows-Deployer application allows you to create and manage a Windows 10 virtual machine with KVM on a Scaleway instance under Ubuntu.
 
 &nbsp;
 
