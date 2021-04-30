@@ -41,7 +41,7 @@ Installation methods:
 
 ## Requirements
 
-- [Spice](https://www.spice-space.org/download.html)
+- [Virt-viewer](https://virt-manager.org/download/)
 
 &nbsp;  
 &nbsp;
@@ -82,4 +82,4 @@ When the instance is ready the initialization [script](https://github.com/yoannd
 
 ### Windows 10 VM Administration
 
-The Spice connection command start streaming with the [Spice software](https://www.spice-space.org/download.html).
+The Spice connection command start streaming with the [Virt-viewer](https://virt-manager.org/download/).
