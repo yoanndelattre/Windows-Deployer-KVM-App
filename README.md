@@ -76,7 +76,7 @@ To use the application you must register the Access key, the Secret key and the 
 
 ### Host Server Administration
 
-The initialization create an instance of type GP1-S ([See the price per hour](https://www.scaleway.com/en/pricing/#virtual-instances)) with 8 cores CPU, 32 GB of ram and a storage volume of 300 Go.
+The initialization create an instance of type GP1-S ([See the price per hour](https://www.scaleway.com/en/pricing/#virtual-instances)) with 8 core CPU, 32 GB of ram and a storage volume of 300 Go.
 
 When the instance is ready the initialization [script](https://github.com/yoanndelattre/Windows-Deployer-KVM-Scripts/blob/master/scripts-install/initial_setup.sh) is launched via Cloud-Init. The installlation takes an average of 4 minutes.
 
