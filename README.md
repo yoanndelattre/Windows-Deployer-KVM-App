@@ -70,7 +70,7 @@ For example : `./Windows-Deployer-Linux-x86_64`
 
 To use the application you must register the Access key, the Secret key and the project ID.
 
-***Important: The keys are not saved on a remote server but directly in the browser with the Local Storage function.***
+***Important: The keys are not saved on a remote server but directly in the browser with the Local Storage function. To delete these keys, click on the "Remove Keys" button***
 
 &nbsp;
 
